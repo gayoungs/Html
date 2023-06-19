@@ -1,0 +1,165 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style: none;}
+image {max-width: 100px; height: auto;} 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+}
+
+
+
+.main_left {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: block;
+    overflow: hidden;
+    
+}
+
+.main_left > li {
+    background-image: url('images/social.png');
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+.main_left li:nth-child(2) {
+    background-position: -32px 0;
+} 
+
+.main_left li:nth-child(2) {
+    background-position: -32px 0;
+} 
+
+.main_left li:nth-child(3) {
+    background-position: -64px 0;
+} 
+.main_left li:nth-child(4) {
+    background-position: -96px 0;
+} 
+
+.main_center {
+    display: block;
+}
+
+.main_center > li > a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    outline: 0;
+    color: #555;
+}
+
+.main_center > li {
+    display: inline-block;
+}
+
+
+.main_right {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.main_right > li {
+    float: right;
+}
+
+.main_right > li > a {
+    text-decoration: none;
+    outline: 0;
+    color: #555;
+    font-size: 12px;
+    padding: 30px;
+}
+
+#main {
+    margin-top: 170px;
+    height: 500px;
+    border-top: 3px solid red;
+    background-image: url(images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main > div:nth-child(1) {
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+#main > div {
+    text-align: center;
+    color: white;
+    line-height: 80px;
+}
+
+#main > div:nth-child(2) {
+    font-size: 30px;
+}
+
+
+#list {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+#list h2 {
+    border-bottom: 3px dashed #ddd;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+img {
+    border:0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+article h3 {
+    color: #ddd;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+article {
+    display: inline-block;
+    padding: 40px;
+}
+
+section {
+    display: block;
+}
+
+footer {
+    text-transform: uppercase;
+    border-top: 2px solid #ddd;
+    line-height: 40px;
+    padding: 0 20px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
