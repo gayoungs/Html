@@ -6,19 +6,17 @@
     <title>Document</title>
 
     <style>
-        
-        *{padding: 0; margin:0;}
-        ul,li {list-style: none;}  /* float법칙 or 넘치는 요소에 대해서 숨김*/
+        * {padding: 0; margin: 0;}
+        ul,li {list-style: none; }
+
 
         .list {
-            overflow: hidden;
+            overflow: hidden; /* float법칙 or 넘치는 요소에 대해서 숨김 */
             width: 800px;
             border: 1px solid #777;
             margin: 0 auto;
         }
-
-        .list li {
-            
+        .list  li {
             float: left;
             width: 25.0000%;
             height: 100px;
@@ -28,9 +26,9 @@
 
         .list .pos {
             background-color: aqua;
-            position: relative;  /*나의 현재위치(상대위치) 에서 z축으로 올린다. */
+            position: relative; /* 나의 현재위치(상대위치) 에서 z축으로 올린다 */
             left: 10px;
-            top: 10%;
+            top: 10px;
         }
         .list .abs {
             background-color: red;
@@ -38,41 +36,41 @@
             right: 30px;
             bottom: 30px;
         }
-
-        .top {
-            background-color: pink;
+        .top-btn {
             position: absolute;
-            right: 200px;
-            bottom: 500px;
+            bottom: 100px;
+            right: 100px;
+            background-color: aqua;
             width: 100px;
             height: 100px;
             line-height: 100px;
             text-align: center;
         }
-    
 
     </style>
-
-
 
 
 </head>
 <body>
     
-<ul class="list">
-    <li style="position: relative;">박스
-        <p class="abs">포지션</p>
-    </li>
-    <li>박스</li>
-    <li>박스</li>
-    <li>박스
-        <p class="pos">포지션</p>
-    </li>
-</ul>
+    <ul class="list"  >
+        <li style="position: relative;">박스
+            <p class="abs">포지션</p>
+        </li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스
+            <p class="pos">포지션</p>
+        </li>
+    </ul>
 
-<article class="top">
-    TOP
-</article>
+
+    <article class="top-btn">
+        TOP
+    </article>
+
+
+
 
 
 </body>
