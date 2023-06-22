@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex; /* block배치 */
+            /* display: inline-flex; */
+
+            background-color: yellow;
+            padding: 20px;
+        }
+        .container .item {
+            background-color: blue;
+            margin: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    https://heropy.blog/2018/11/24/css-flexible-box/s
+
+    <h3>flex vs inlineflex</h3>
+
+    <div class="container">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+    <div class="container">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+
+    <hr/>
+
+
+    <style>
+        .container2 {
+            display: flex; 
+            flex-direction: column-reverse;  /*주축(배치방향) - 서브축(배치방향반대)*/
+
+            background-color: yellow;
+            padding: 20px;
+        }
+        .container2 .item {
+            background-color: blue;
+            margin: 10px;
+            
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+
+    <h3>flex-direction 주축에 대한 설정</h3>
+
+    <div class="container2">
+        <div class="item">flex1</div>
+        <div class="item">flex2</div>
+        <div class="item">flex3</div>
+    </div>
+
+  
+    
+    <style>
+        .container3 {
+            display: flex; 
+            /* item의 줄바꿈 설정 */
+
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* nowrap; */
+
+            /* dirextion과 wrap으르 동시에 적용하는 속성 */
+            flex-flow: row wrap;
+
+            background-color: yellow;
+            padding: 20px;
+            width: 500px;
+
+        }
+        .container3 .item {
+            background-color: blue;
+            margin: 10px;
+            
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <h3>flex-wrap (컨테이너에 공간이 없을 때 줄바꿈 설정)</h3>
+
+    <div class="container3">
+        <div class="item">flex1</div>
+        <div class="item">flex2</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+        <div class="item">flex3</div>
+    </div>
+
+    <style>
+        .container2 {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 교차축 정렬 (2줄 이상일 때 ) */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between; /* 양끝 붙이고 균등간격 */
+            align-content: space-around;/* 균등 간격 */
+
+            background-color: yellow;
+            padding: 20px;
+            height: 500px;
+        }
+        .container2 .item {
+            background-color: blue;
+            margin: 10px;
+        }
+
+    </style>
+
+    <div class="container2">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr/>
+    
+    <style>
+        .container3 {
+            display: flex;
+            /* 교차축 정렬 (한줄 일때) */
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline; /* 글자 기준으로 교차축정렬을 맞춤 */
+
+            background-color: yellow;
+            padding: 20px;
+            height: 500px;
+        }
+        .container3 .item {
+            background-color: blue;
+            margin: 10px;
+        }
+
+    </style>
+
+    <div class="container3">
+        <div class="item" style="height: 50px; line-height: 50px;">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+
+
+    <hr/>
+    
+    <style>
+
+        .box {
+            background-color: pink;
+            height: 100vh; /* 화면상에 보이는 전체높이 */
+
+            display: flex;
+            justify-content: center; /* 주축 정렬 */
+            align-items: center; /* 교차축 1줄 정렬 */
+
+        }
+    </style>
+
+    
+    <div>
+
+        <div class="box">정 가운데로</div>
+
+    </div>
+
+
+
+</body>
+</html>
